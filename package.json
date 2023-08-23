@@ -5,8 +5,8 @@
   "main": "server.js",
   "type": "commonjs",
   "scripts": {
-    "start": "nodemon backend/server.js",
-    "server": "nodemon backend/server.js",
+    "start": "node backend/server.js",
+    "server": "node backend/server.js",
     "build": "yarn install --legacy-peer-deps && yarn install --legacy-peer-deps --prefix frontend && yarn run build --prefix frontend "
   },
   "author": "rohan kumar",
