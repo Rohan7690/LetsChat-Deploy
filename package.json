@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node backend/server.js",
     "server": "node backend/server.js",
-    "build": "yarn install --legacy-peer-deps && yarn install --prefix frontend --legacy-peer-deps  && yarn run build --prefix frontend"
+    "build": "yarn install --legacy-peer-deps && yarn install --prefix frontend --legacy-peer-deps  && yarn run build "
   },
   "author": "rohan kumar",
   "license": "ISC",
