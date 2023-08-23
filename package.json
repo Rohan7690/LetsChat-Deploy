@@ -7,7 +7,7 @@
   "scripts": {
     "start": "nodemon backend/server.js",
     "server": "nodemon backend/server.js",
-    "build": "yarn install --legacy-peer-deps && yarn install --legacy-peer-deps --prefix  frontend && yarn run build --prefix frontend"
+    "build": "yarn install --legacy-peer-deps && yarn install --legacy-peer-deps --prefix  frontend && yarn run build "
   },
   "author": "rohan kumar",
   "license": "ISC",
@@ -21,5 +21,6 @@
     "mongoose": "^7.4.2",
     "nodemon": "^3.0.1",
     "socket.io": "^4.7.2"
-  }
+  },
+  "repository": "https://github.com/Rohan7690/LetsChat-Deploy.git"
 }
