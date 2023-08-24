@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node backend/server.js",
     "server": "node backend/server.js",
-    "build": "npm install --legacy-peer-deps && npm install --prefix frontend && npm run build --prefix frontend"
+    "build": "npm install --legacy-peer-deps && npm config set legacy-peer-deps true --prefix frontend && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "author": "rohan kumar",
   "license": "ISC",
