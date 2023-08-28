@@ -6,6 +6,7 @@ import { AddIcon } from '@chakra-ui/icons';
 import { getSender, getSenderPic } from '../config/chatLogic';
 import GroupChatModal from '../components/miscellaneous/GroupChatModal';
 import ChatLoading from './ChatLoading';
+import ScrollableFeed from 'react-scrollable-feed';
 
 export default function MyChats({fetchAgain}) {
   const {user,selectedChat,setSelectedChat,chats,setChats} = ChatState();
@@ -57,20 +58,20 @@ export default function MyChats({fetchAgain}) {
     borderRadius="lg"
     borderWidth="1px"
     borderColor={'#141E46'}
-    overflow={'scroll'}
   >
-    <Stack
+    <Box
       pb={3}
       px={3}
       fontSize={{ base: "28px", md: "30px" }}
       fontFamily="Montserrat"
-      d="flex"
+      display="flex"
       w="100%"
       justifyContent="space-between"
       alignItems="center"
       color={'whitesmoke'}
       flexDir={['column','row','row']}
       borderBottom={'1px solid black'}
+      
     >
     <Box>
       My Chats
@@ -88,20 +89,21 @@ export default function MyChats({fetchAgain}) {
           New Group Chat
         </Button>
       </GroupChatModal>
-    </Stack>
+    </Box>
+    
     <Box
-      d="flex"
-      flexDir="column"
+      display={'flex'}
+      flexDir={'column'}
       p={[1,2,3]}
-      bg="#F8F8F8"
+      bg="#141E46"
       w="100%"
       h="100%"
-      bg={"#141E46"}
       borderRadius="lg"
-      overflowY="hidden"
+      overflow={'hidden'}
     >
-      {chats ? (
-        <Stack overflowY="scroll">
+    
+      {chats && (
+        <Stack overflow={'scroll'} >
           {chats.map((chat) => (
             <Box
               onClick={() => setSelectedChat(chat)}
@@ -129,10 +131,10 @@ export default function MyChats({fetchAgain}) {
             </Box>
           ))}
         </Stack>
-      ) : (
-        <ChatLoading />
-      )}
+      ) }
+      
     </Box>
+    
   </Box>
   )
 }
