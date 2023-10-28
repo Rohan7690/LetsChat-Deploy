@@ -33,6 +33,7 @@ export default function SideDrawer() {
 
   const logoutHandler = () => {
     localStorage.removeItem('userInfo');
+    window.location.reload();
     navigate('/');
   }
 
