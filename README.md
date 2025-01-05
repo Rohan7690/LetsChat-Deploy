@@ -11,6 +11,11 @@ A real-time chat application enabling users to communicate seamlessly across dev
 - Persistent message history with database integration.
 - Active user status updates for enhanced visibility.
 
+### Search and Group Chat
+- **Search Feature**: Quickly find users or messages.
+- **Group Chat**: Create and participate in group conversations.
+- **Update Group Members**: Add or remove members from groups dynamically.
+
 ### Authentication
 - User registration and login functionality.
 - Secure user authentication using **bcrypt** for password hashing.
@@ -36,8 +41,8 @@ A real-time chat application enabling users to communicate seamlessly across dev
 
 ### Frontend
 - **React.js**: UI development.
-- **CSS**: Styling for pages and components.
-- **Netlify**: Deployment platform for the frontend.
+- **Chakra UI**: Styling for pages and components.
+- **Render**: Deployment platform for the frontend.
 
 ---
 
@@ -106,12 +111,20 @@ npm start
 
 ## Screenshots
 
-1. **Login Page**
+1. **SignUp Page**
 
-   ![Login Page](./screenshots/login.png)
+   ![SignUp Page](./screenshots/Login.png)
 
-2. **Chat Interface**
+2. **Home Page**
 
-   ![Chat Interface](./screenshots/chat.png)
+   ![Home Page](./screenshots/Home.png)
+
+3. **Search Feature**
+
+   ![Search Feature](./screenshots/Search.png)
+
+4. **Group Management**
+
+   ![Group Management](./screenshots/GroupManage.png)
 
 ---
